@@ -5,5 +5,25 @@ Echo chamber is a phenomenon where users’ opinions get amplified and reinforce
 
 ## Description:
 Data: data collection(snscrape and twint) and data cleaning notebook files
+
 Stance Detection_ChatGPT: stance detection with ChatGPT3.5 connecting with ChatGPT API, including labeling stance file and validation for GPT3.5 model
+
 Analysis: Detecting Echo Chamber Effects, Network Analysis, and Hypothesis Testing
+
+## Data Source:
+Twitter scraping with snscrape(tweets) and twint(user following data)
+
+## Stance Detection:
+In the stance detection process, I calculate user's average stance leaning score, representing user's attitude towards abortion. 
+
+In this project: stance leaning score  = stance score * sentiment polarity score
+
+stance score is the classification result given by ChatGPT3.5 model, sentiment polarity score is from VADER sentiment analysis.
+
+## Visualization & Network
+Echo Chamber Effect:
+![Echo Chamber](echochamber.png?raw=true "Echo Chamber: Individual Leaning VS Following Leaning")
+
+Network:
+![Following Network](abortion_net.png?raw=true "User Following Network")
+
